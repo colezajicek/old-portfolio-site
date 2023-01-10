@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inactive Projects</title>
+  <link href='./style.css' rel ='stylesheet'>
+</head>
+<body>
+  <nav class = "nav">
+    <ul>
+      <li> <a href='index.html' class="button1 bouncy" style="animation-delay:0.07s"> Home </a></li>
+      <li> <a href='about.html'class="button1 bouncy" style="animation-delay:0.14s">About Me </a></li>
+      <li> <a href='pets.html'class="button1 bouncy" style="animation-delay:0.21s">Pets </a></li>
+      <li> <a href='cv.html'class="button1 bouncy" style="animation-delay:0.28s">CV </a></li>
+      <li> <a href='education.html'class="button1 bouncy" style="animation-delay:0.35s">Education </a></li>
+      <li> <a href='active_projects.html'class="button1 bouncy" style="animation-delay:0.42s">Active Projects </a></li>
+      <li> <a href='inactive_projects.html'class="button1 bouncy" style="animation-delay:0.49s">Inactive Projects </a></li>
+      <li> <a href='lists.html'class="button1 bouncy" style="animation-delay:0.56s">Lists </a></li>
+      <li> <a href='style_guide.html'class="button1 bouncy" style="animation-delay:0.63s">Style Guide </a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>PROJECT IDEAS:</h2>
+    <ul id='inactive_projects_ideas'>
+      <li>user repositionable light source that changes the visual display of elements in response.</li>
+      <li>the field of stars effect</li>
+      <li>field of objects that avoid the cursor</li>
+      <li>live webcam feed with user controls</li>
+      <li>JS that makes a full HSLA list page by creating the HTML and CSS code directly</li>
+      <li>card game analysis AI showing win/loss percentages, which cards to keep/discard, likelihoods of drawing a 
+        desired card based on cards in hand and possible cards in deck/pile to complete possible runs in hand. add 
+        image recognition to scan cards on hand/table/reflective surfaces in camera's view without direct input of cards. 
+        make an app that runs this. pull the image data from smart glasses and display the ouput holographic UI on them. 
+        Drawbacks: going to have to manually deconstruct the rules of any card game I want it to analyze and reconstruct 
+        them in code using logic checks which is un ungodly amount of permutations. Need to analyze desireable combinations 
+        of values of suit and number runs or matching. Then run a permutation that displays it's own odds of happening also 
+        need to calculate more odds given an array of various deck conditions and played cards</li>
+    </ul>
+    <br>
+    <h2>FINISHED PROJECTS:</h2>
+    <ul id='finished_projects'>
+      <li href="#randhexcolorgen">Random hex color generator
+        <pre><code>
+          function randHexColor()
+          {
+            let color = '#'
+            for (i = 0; i<6; i++)
+              {
+                let values = '0123456789ABCDEF'
+                color += values[(Math.floor(Math.random() *16))]
+              }
+            return color
+          }
+        </code></pre>
+        <p>probably influenced and not original, but a nice snippet that has had a real world use already on 
+          <a href="./style_guide.html#acid">this page's style guide</a></p>
+      </li>
+    </ul>
+  </main>
+
+</body>
+</html>
